@@ -2,7 +2,7 @@
 
 [English](README.md) · [العربية](README.ar.md)
 
-# Anastasia Space
+<h1><img src="https://family.xotaku.com/stella/png/xotaku_logo_100.png" width="40" height="40" alt=""> Anastasia Space</h1>
 
 The official open-source mobile app for Anastasia Space.
 
@@ -11,6 +11,8 @@ The official open-source mobile app for Anastasia Space.
 [![License: MPL 2.0](https://img.shields.io/badge/license-MPL_2.0-blue?style=flat-square)](LICENSE)
 
 **[Try the development APK](dev/anastasia-space-dev.apk)**
+
+<img src="https://anime.xotaku.com/stella/webp/interface/home_hero/480.webp" width="160" alt="">
 
 </div>
 
