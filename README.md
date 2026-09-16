@@ -2,8 +2,6 @@
 
 [English](README.md) · [العربية](README.ar.md)
 
-<img src="https://anime.xotaku.com/stella/webp/interface/home_hero/480.webp" width="240" alt="">
-
 # Anastasia Space
 
 The official open-source mobile app for Anastasia Space.
@@ -21,11 +19,10 @@ Anastasia Space is already live. This repository is home to its new mobile app, 
 ## Live origins
 
 <p align="center">
-  <a href="https://xotaku.com/"><img src="https://family.xotaku.com/stella/png/xotaku_logo_100.png" width="24" height="24" alt=""> xotaku.com</a> &nbsp;·&nbsp;
-  <a href="https://anime.xotaku.com/"><img src="https://anime.xotaku.com/favicon.ico" width="24" height="24" alt=""> Anime</a> &nbsp;·&nbsp;
-  <a href="https://family.xotaku.com/"><img src="https://family.xotaku.com/favicon.ico" width="24" height="24" alt=""> Family</a> &nbsp;·&nbsp;
-  <a href="https://orbit.xotaku.com/"><img src="https://orbit.xotaku.com/favicon.ico" width="24" height="24" alt=""> Orbit</a> &nbsp;·&nbsp;
-  <a href="https://status.xotaku.com/"><img src="https://status.xotaku.com/favicon.ico" width="24" height="24" alt=""> Status</a>
+  <a href="https://anime.xotaku.com/">Anastasia Anime</a> &nbsp;·&nbsp;
+  <a href="https://family.xotaku.com/">Anastasia Family</a> &nbsp;·&nbsp;
+  <a href="https://orbit.xotaku.com/">Anastasia Orbit</a> &nbsp;·&nbsp;
+  <a href="https://status.xotaku.com/">Anastasia Pulse</a>
 </p>
 
 ## The app today
