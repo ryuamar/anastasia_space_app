@@ -21,7 +21,7 @@
 
 يمكنك تنزيل النسخة الحالية وتثبيتها على **أندرويد 7.0 أو أحدث**. هي **نسخة تطوير واختبار (Debug)**، وليست إصدارًا مستقرًا.
 
-**[حمّل النسخة التجريبية](dev/anastasia-space-dev.apk)**
+**[حمّل أحدث نسخة Alpha للتطوير والاختبار](https://github.com/ryuamar/anastasia_space_app/releases/download/v0.1.0-alpha.1/anastasia-space-dev.apk)**
 
 <p align="center">
   <img src="https://anime.xotaku.com/stella/webp/interface/home_hero/480.webp" width="200" alt="">
@@ -58,7 +58,7 @@
 
 ## بناء التطبيق من المصدر
 
-نُعدّ دليلًا يوضح كيفية بناء التطبيق من شيفرته المصدرية بخطوات يمكن تكرارها للحصول على النتيجة نفسها. سننشره قبل أول إصدار موسوم في المستودع.
+[تعليمات بناء نسخة أندرويد متاحة الآن في BUILDING.md](BUILDING.md).
 
 ## المساهمة
 
