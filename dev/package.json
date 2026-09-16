@@ -4,5 +4,12 @@
   "private": true,
   "description": "Development version of the Anastasia Space mobile app.",
   "license": "MPL-2.0",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@capacitor/android": "latest",
+    "@capacitor/core": "latest"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "latest"
+  }
 }
