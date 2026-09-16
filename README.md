@@ -20,7 +20,7 @@ Anastasia Space is already live. Its official mobile app is new, open source, an
 
 The current Android APK works and is ready to try on **Android 7.0+**. It is a **development/debug build**, not a stable release.
 
-**[Download APK](dev/anastasia-space-dev.apk)**
+**[Download the current Alpha development/testing APK](https://github.com/ryuamar/anastasia_space_app/releases/download/v0.1.0-alpha.1/anastasia-space-dev.apk)**
 
 <p align="center">
   <img src="https://anime.xotaku.com/stella/webp/interface/home_hero/480.webp" width="200" alt="">
@@ -57,7 +57,7 @@ The mobile app source is open source under the **[Mozilla Public License 2.0](LI
 
 ## Building
 
-Reproducible public build instructions are being prepared before the first tagged release.
+[Public Android build instructions are now available in BUILDING.md](BUILDING.md).
 
 ## Contributing
 
