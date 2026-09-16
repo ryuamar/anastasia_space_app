@@ -3,11 +3,9 @@
 
 [English](README.md) · [العربية](README.ar.md)
 
-<img src="https://anime.xotaku.com/stella/webp/interface/home_hero/480.webp" width="240" alt="">
+# فضاء أنستازيا
 
-# فضاء أناستازيا
-
-تطبيق الهاتف الرسمي مفتوح المصدر لفضاء أناستازيا — Anastasia Space.
+تطبيق الهاتف الرسمي مفتوح المصدر لفضاء أنستازيا — Anastasia Space.
 
 ![قيد التطوير](https://img.shields.io/badge/الحالة-قيد_التطوير-5865F2?style=flat-square)
 ![أندرويد 7.0 فأحدث](https://img.shields.io/badge/Android-7.0%2B-3DDC84?style=flat-square)
@@ -17,21 +15,20 @@
 
 </div>
 
-فضاء أناستازيا متاح بالفعل عبر الويب. أما تطبيق الهاتف فهو مشروع جديد يجري تطويره حاليًا، وهذا المستودع مخصص له. الشيفرة المصدرية للمواقع والخوادم منفصلة وليست جزءًا من هذا المستودع.
+فضاء أنستازيا متاح بالفعل عبر الويب. أما تطبيق الهاتف فهو مشروع جديد يجري تطويره حاليًا، وهذا المستودع مخصص له. الشيفرة المصدرية للمواقع والخوادم منفصلة وليست جزءًا من هذا المستودع.
 
-## مواقع أناستازيا
+## مواقع أنستازيا
 
-<p align="center" dir="ltr">
-  <a href="https://xotaku.com/"><img src="https://family.xotaku.com/stella/png/xotaku_logo_100.png" width="24" height="24" alt=""> xotaku.com</a> &nbsp;·&nbsp;
-  <a href="https://anime.xotaku.com/"><img src="https://anime.xotaku.com/favicon.ico" width="24" height="24" alt=""> Anime</a> &nbsp;·&nbsp;
-  <a href="https://family.xotaku.com/"><img src="https://family.xotaku.com/favicon.ico" width="24" height="24" alt=""> Family</a> &nbsp;·&nbsp;
-  <a href="https://orbit.xotaku.com/"><img src="https://orbit.xotaku.com/favicon.ico" width="24" height="24" alt=""> Orbit</a> &nbsp;·&nbsp;
-  <a href="https://status.xotaku.com/"><img src="https://status.xotaku.com/favicon.ico" width="24" height="24" alt=""> Status</a>
+<p align="center" dir="rtl">
+  <a href="https://anime.xotaku.com/">أنستازيا أنمي</a> &nbsp;·&nbsp;
+  <a href="https://family.xotaku.com/">عائلة أنستازيا</a> &nbsp;·&nbsp;
+  <a href="https://orbit.xotaku.com/">مدار أنستازيا</a> &nbsp;·&nbsp;
+  <a href="https://status.xotaku.com/">نبض أنستازيا</a>
 </p>
 
 ## التطبيق حاليًا
 
-نبدأ بأندرويد، ونعتمد على Capacitor كأساس للتطبيق. تفتح النسخة الحالية [أناستازيا العائلة](https://family.xotaku.com/login)، وتعمل على **أندرويد 7.0 فأحدث، بدءًا من API 24**.
+نبدأ بأندرويد، ونعتمد على Capacitor كأساس للتطبيق. تفتح النسخة الحالية [عائلة أنستازيا](https://family.xotaku.com/login)، وتعمل على **أندرويد 7.0 فأحدث، بدءًا من API 24**.
 
 ملف APK الحالي يعمل ويمكن تثبيته. لكن التطبيق لا يزال في بداياته، والملف المتاح **نسخة تطوير واختبار (Debug)**، وليس إصدارًا رسميًا مستقرًا.
 
@@ -47,7 +44,7 @@
 
 ## المصدر والرخصة
 
-الشيفرة المصدرية لتطبيق الهاتف مفتوحة بموجب **[رخصة موزيلا العامة 2.0 (MPL 2.0)](LICENSE)**. شيفرة مواقع فضاء أناستازيا وخوادمه تُدار بشكل منفصل؛ هذا المستودع يضم تطبيق الهاتف فقط.
+الشيفرة المصدرية لتطبيق الهاتف مفتوحة بموجب **[رخصة موزيلا العامة 2.0 (MPL 2.0)](LICENSE)**. شيفرة مواقع فضاء أنستازيا وخوادمه تُدار بشكل منفصل؛ هذا المستودع يضم تطبيق الهاتف فقط.
 
 ## محتويات المستودع
 
