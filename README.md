@@ -12,8 +12,6 @@ The official open-source mobile app for Anastasia Space.
 
 </div>
 
-<img align="right" src="https://anime.xotaku.com/stella/webp/interface/home_hero/480.webp" width="200" alt="">
-
 ### Anastasia, on your phone
 
 Anastasia Space is already live. Its official mobile app is new, open source, and actively being developed here.
@@ -22,7 +20,9 @@ The current Android APK works and is ready to try on **Android 7.0+**. It is a *
 
 **[Download the development APK →](dev/anastasia-space-dev.apk)**
 
-<br clear="all">
+<p align="center">
+  <img src="https://anime.xotaku.com/stella/webp/interface/home_hero/480.webp" width="200" alt="">
+</p>
 
 ## Live origins
 
