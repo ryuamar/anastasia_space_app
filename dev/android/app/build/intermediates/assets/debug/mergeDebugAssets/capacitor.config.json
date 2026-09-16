@@ -1,0 +1,9 @@
+{
+	"appId": "com.xotaku.anastasia",
+	"appName": "Anastasia Space",
+	"webDir": "www",
+	"server": {
+		"url": "https://family.xotaku.com/login",
+		"cleartext": false
+	}
+}
