@@ -10,13 +10,19 @@ The official open-source mobile app for Anastasia Space.
 ![Android 7.0+](https://img.shields.io/badge/Android-7.0%2B-3DDC84?style=flat-square)
 [![License: MPL 2.0](https://img.shields.io/badge/license-MPL_2.0-blue?style=flat-square)](LICENSE)
 
-**[Try the development APK](dev/anastasia-space-dev.apk)**
-
-<img src="https://anime.xotaku.com/stella/webp/interface/home_hero/480.webp" width="160" alt="">
-
 </div>
 
-Anastasia Space is already live. This repository is home to its new mobile app, which is actively being developed. The website and server-side source are separate and are not included here.
+<img align="right" src="https://anime.xotaku.com/stella/webp/interface/home_hero/480.webp" width="200" alt="">
+
+### Anastasia, on your phone
+
+Anastasia Space is already live. Its official mobile app is new, open source, and actively being developed here.
+
+The current Android APK works and is ready to try on **Android 7.0+**. It is a **development/debug build**, not a stable release.
+
+**[Download the development APK →](dev/anastasia-space-dev.apk)**
+
+<br clear="all">
 
 ## Live origins
 
@@ -30,14 +36,6 @@ Anastasia Space is already live. This repository is home to its new mobile app, 
 ## The app today
 
 Development is Android-first, built with Capacitor. The current app starts through [Anastasia Family](https://family.xotaku.com/login) and supports **Android 7.0 / API 24 and newer**.
-
-The current development APK is working and installable. The app is still in early development: this is a **debug build for testing**, not an official stable or production release.
-
-### Try the current build
-
-**[Download the latest development/testing APK →](dev/anastasia-space-dev.apk)**
-
-The linked repository file is the current development build. Use it to try the app as its foundation takes shape.
 
 ## Direction
 
