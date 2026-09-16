@@ -17,6 +17,19 @@ buildscript {
 
 apply from: "variables.gradle"
 
+subprojects {
+    plugins.withId('com.android.application') {
+        android {
+            buildToolsVersion = '36.1.0'
+        }
+    }
+    plugins.withId('com.android.library') {
+        android {
+            buildToolsVersion = '36.1.0'
+        }
+    }
+}
+
 allprojects {
     repositories {
         google()
