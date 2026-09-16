@@ -49,13 +49,11 @@ The mobile app source is open source under the **[Mozilla Public License 2.0](LI
 
 ## Repository structure
 
-| Path | Purpose |
-| --- | --- |
-| [`dev/`](dev/) | Active development version |
-| [`dev/android/`](dev/android/) | Android project |
-| [`dev/www/`](dev/www/) | Local Capacitor web entry |
-| [`dev/anastasia-space-dev.apk`](dev/anastasia-space-dev.apk) | Current development APK |
-| `live/` | Reserved for stable release source later; currently empty |
+- [`dev/`](dev/) — Active development version.
+- [`dev/android/`](dev/android/) — Android project.
+- [`dev/www/`](dev/www/) — Local Capacitor web entry.
+- [Development APK](dev/anastasia-space-dev.apk) — `anastasia-space-dev.apk` inside `dev/`.
+- `live/` — Reserved for stable release source; currently empty.
 
 ## Building
 
