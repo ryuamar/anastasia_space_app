@@ -2,7 +2,9 @@
 
 [English](README.md) · [العربية](README.ar.md)
 
-<h1><img src="https://family.xotaku.com/stella/png/xotaku_logo_100.png" width="40" height="40" alt=""> Anastasia Space</h1>
+<img src="https://family.xotaku.com/stella/png/xotaku_logo_100.png" width="48" height="48" alt="">
+
+<h1>Anastasia Space</h1>
 
 The official open-source mobile app for Anastasia Space.
 
@@ -18,7 +20,7 @@ Anastasia Space is already live. Its official mobile app is new, open source, an
 
 The current Android APK works and is ready to try on **Android 7.0+**. It is a **development/debug build**, not a stable release.
 
-**[Download the development APK →](dev/anastasia-space-dev.apk)**
+**[Download APK](dev/anastasia-space-dev.apk)**
 
 <p align="center">
   <img src="https://anime.xotaku.com/stella/webp/interface/home_hero/480.webp" width="200" alt="">
