@@ -3,7 +3,7 @@
 
 [English](README.md) · [العربية](README.ar.md)
 
-# فضاء أنستازيا
+<h1><img src="https://family.xotaku.com/stella/png/xotaku_logo_100.png" width="40" height="40" alt=""> فضاء أنستازيا</h1>
 
 التطبيق الرسمي لفضاء أنستازيا على الهاتف — مفتوح المصدر.
 
@@ -12,6 +12,8 @@
 [![رخصة MPL 2.0](https://img.shields.io/badge/license-MPL_2.0-blue?style=flat-square)](LICENSE)
 
 **[حمّل التطبيق وجرّبه](dev/anastasia-space-dev.apk)**
+
+<img src="https://anime.xotaku.com/stella/webp/interface/home_hero/480.webp" width="160" alt="">
 
 </div>
 
