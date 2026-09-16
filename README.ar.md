@@ -3,7 +3,9 @@
 
 [English](README.md) · [العربية](README.ar.md)
 
-<h1><img src="https://family.xotaku.com/stella/png/xotaku_logo_100.png" width="40" height="40" alt=""> فضاء أنستازيا</h1>
+<img src="https://family.xotaku.com/stella/png/xotaku_logo_100.png" width="48" height="48" alt="">
+
+<h1>فضاء أنستازيا</h1>
 
 التطبيق الرسمي لفضاء أنستازيا على الهاتف — مفتوح المصدر.
 
@@ -19,7 +21,7 @@
 
 يمكنك تنزيل النسخة الحالية وتثبيتها على **أندرويد 7.0 أو أحدث**. هي **نسخة تطوير واختبار (Debug)**، وليست إصدارًا مستقرًا.
 
-**[حمّل أحدث نسخة للتجربة — APK](dev/anastasia-space-dev.apk)**
+**[حمّل النسخة التجريبية](dev/anastasia-space-dev.apk)**
 
 <p align="center">
   <img src="https://anime.xotaku.com/stella/webp/interface/home_hero/480.webp" width="200" alt="">
