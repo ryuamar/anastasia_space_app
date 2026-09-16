@@ -13,8 +13,6 @@
 
 </div>
 
-<img align="left" src="https://anime.xotaku.com/stella/webp/interface/home_hero/480.webp" width="200" alt="">
-
 ### أنستازيا على هاتفك
 
 مواقع فضاء أنستازيا متاحة للاستخدام، ونعمل الآن على تطبيقها الرسمي للهاتف. التطبيق مفتوح المصدر، ولا يزال في بداياته.
@@ -23,7 +21,9 @@
 
 **[حمّل أحدث نسخة للتجربة — APK](dev/anastasia-space-dev.apk)**
 
-<br clear="all">
+<p align="center">
+  <img src="https://anime.xotaku.com/stella/webp/interface/home_hero/480.webp" width="200" alt="">
+</p>
 
 ## مواقع أنستازيا
 
