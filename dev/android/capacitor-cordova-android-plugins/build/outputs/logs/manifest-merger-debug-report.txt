@@ -1,0 +1,20 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /xotaku/siren_projects/anastasia_space_app/dev/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:2:1-8:12
+INJECTED from /xotaku/siren_projects/anastasia_space_app/dev/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:2:1-8:12
+	package
+		INJECTED from /xotaku/siren_projects/anastasia_space_app/dev/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+	xmlns:amazon
+		ADDED from /xotaku/siren_projects/anastasia_space_app/dev/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:3:1-57
+	xmlns:android
+		ADDED from /xotaku/siren_projects/anastasia_space_app/dev/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /xotaku/siren_projects/anastasia_space_app/dev/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:4:1-6:15
+uses-sdk
+INJECTED from /xotaku/siren_projects/anastasia_space_app/dev/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /xotaku/siren_projects/anastasia_space_app/dev/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+INJECTED from /xotaku/siren_projects/anastasia_space_app/dev/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /xotaku/siren_projects/anastasia_space_app/dev/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /xotaku/siren_projects/anastasia_space_app/dev/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
