@@ -3,7 +3,7 @@
 	"appName": "Anastasia Space",
 	"webDir": "www",
 	"server": {
-		"url": "https://family.xotaku.com/login",
+		"url": "https://family.xotaku.com/",
 		"cleartext": false
 	}
 }
