@@ -6,22 +6,35 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
+    <!-- Premium full-bleed navy → indigo → violet base -->
     <path android:pathData="M0,0H108V108H0Z">
         <aapt:attr name="android:fillColor">
             <gradient
-                android:startX="18"
-                android:startY="90"
-                android:endX="90"
-                android:endY="18"
+                android:startX="10"
+                android:startY="100"
+                android:endX="100"
+                android:endY="8"
                 android:type="linear">
-                <item android:offset="0" android:color="#121842"/>
-                <item android:offset="0.52" android:color="#292B78"/>
-                <item android:offset="1" android:color="#5843B2"/>
+                <item android:offset="0" android:color="#10163B"/>
+                <item android:offset="0.52" android:color="#252A73"/>
+                <item android:offset="1" android:color="#5544B0"/>
             </gradient>
         </aapt:attr>
     </path>
 
-    <path
-        android:fillColor="#EFF1FA"
-        android:pathData="M52,108 L108,52 L108,108 Z"/>
+    <!-- Very soft cool highlight for depth; no hard shapes -->
+    <path android:pathData="M0,0H108V108H0Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="78"
+                android:centerY="24"
+                android:gradientRadius="72"
+                android:type="radial">
+                <item android:offset="0" android:color="#406F8CFF"/>
+                <item android:offset="0.48" android:color="#164C63D8"/>
+                <item android:offset="1" android:color="#005544B0"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
 </vector>
