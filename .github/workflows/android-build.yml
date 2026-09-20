@@ -4,13 +4,19 @@ on:
   push:
     branches: [main]
     paths:
-      - "dev/**"
+      - "dev/package.json"
+      - "dev/package-lock.json"
+      - "dev/capacitor.config.json"
+      - "dev/android/**"
       - ".github/workflows/android-build.yml"
 
   pull_request:
     branches: [main]
     paths:
-      - "dev/**"
+      - "dev/package.json"
+      - "dev/package-lock.json"
+      - "dev/capacitor.config.json"
+      - "dev/android/**"
       - ".github/workflows/android-build.yml"
 
   workflow_dispatch:
