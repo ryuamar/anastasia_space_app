@@ -17,19 +17,15 @@ import java.util.Locale;
 
 public class MainActivity extends BridgeActivity {
 
-    private void hideSystemBars() {
+    private void configureSystemBars() {
+        WindowCompat.enableEdgeToEdge(getWindow());
+
         WindowInsetsControllerCompat bars =
             WindowCompat.getInsetsController(getWindow(), getWindow().getDecorView());
-        bars.hide(WindowInsetsCompat.Type.systemBars());
-        bars.setSystemBarsBehavior(
-            WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
-        );
-    }
 
-    @Override
-    public void onWindowFocusChanged(boolean hasFocus) {
-        super.onWindowFocusChanged(hasFocus);
-        if (hasFocus) hideSystemBars();
+        bars.show(WindowInsetsCompat.Type.systemBars());
+        bars.setAppearanceLightStatusBars(false);
+        bars.setAppearanceLightNavigationBars(false);
     }
 
     @Override
