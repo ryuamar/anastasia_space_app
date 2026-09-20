@@ -17,17 +17,27 @@ import java.util.Locale;
 
 public class MainActivity extends BridgeActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+    private void hideSystemBars() {
         WindowInsetsControllerCompat bars =
             WindowCompat.getInsetsController(getWindow(), getWindow().getDecorView());
         bars.hide(WindowInsetsCompat.Type.systemBars());
         bars.setSystemBarsBehavior(
             WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
         );
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus) hideSystemBars();
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+        hideSystemBars();
 
         bridge.setWebViewClient(new BridgeWebViewClient(bridge) {
             @Override
