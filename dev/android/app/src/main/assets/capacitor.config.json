@@ -5,5 +5,10 @@
 	"server": {
 		"url": "https://family.xotaku.com/",
 		"cleartext": false
+	},
+	"plugins": {
+		"SystemBars": {
+			"insetsHandling": "disable"
+		}
 	}
 }
