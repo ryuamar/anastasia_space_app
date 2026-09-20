@@ -17,6 +17,21 @@ import java.util.Locale;
 
 public class MainActivity extends BridgeActivity {
 
+    @Override
+    protected void load() {
+        WebView webView = findViewById(com.getcapacitor.android.R.id.webview);
+
+        if (androidx.webkit.WebViewFeature.isFeatureSupported(androidx.webkit.WebViewFeature.DOCUMENT_START_SCRIPT)) {
+            androidx.webkit.WebViewCompat.addDocumentStartJavaScript(
+                webView,
+                "window.anastasiaApp=true;",
+                new java.util.HashSet<>(java.util.Arrays.asList("https://xotaku.com", "https://*.xotaku.com"))
+            );
+        }
+
+        super.load();
+    }
+
     private void configureSystemBars() {
         WindowCompat.enableEdgeToEdge(getWindow());
 
