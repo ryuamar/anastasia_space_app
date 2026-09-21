@@ -78,7 +78,7 @@ tasks.register('prepareSyncApk') {
                 throw new GradleException('APK Capacitor configuration does not match the source. Run npm run build:android.')
             }
         }
-        java.nio.file.Files.copy(apk.get().asFile.toPath(), destination.toPath().resolve('anastasia-space-dev.apk'), java.nio.file.StandardCopyOption.REPLACE_EXISTING)
+        java.nio.file.Files.copy(apk.get().asFile.toPath(), destination.toPath().resolve('anastasia-space.apk'), java.nio.file.StandardCopyOption.REPLACE_EXISTING)
     }
 }
 
