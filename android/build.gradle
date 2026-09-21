@@ -1,0 +1,60 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:9.4.1'
+        classpath 'com.google.gms:google-services:4.5.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+apply from: "variables.gradle"
+
+subprojects { child ->
+    rootProject.ext.properties.each { name, value ->
+        child.extensions.extraProperties.set(name, value)
+    }
+
+    if (child.name == 'capacitor-cordova-android-plugins') {
+        child.afterEvaluate {
+            child.repositories.withType(org.gradle.api.artifacts.repositories.FlatDirectoryArtifactRepository).toList().each { repository ->
+                if (repository.dirs.every { directory ->
+                    !directory.exists() || directory.listFiles().length == 0
+                }) {
+                    child.repositories.remove(repository)
+                }
+            }
+        }
+    }
+
+    plugins.withId('com.android.application') {
+        android {
+            buildToolsVersion = '37.0.0'
+            compileSdkMinor = rootProject.ext.compileSdkMinorVersion
+        }
+    }
+    plugins.withId('com.android.library') {
+        android {
+            buildToolsVersion = '37.0.0'
+            compileSdkMinor = rootProject.ext.compileSdkMinorVersion
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

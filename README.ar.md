@@ -21,7 +21,7 @@
 
 يمكنك تنزيل النسخة الحالية وتثبيتها على **أندرويد 7.0 أو أحدث**. هي **نسخة تطوير واختبار (Debug)**، وليست إصدارًا مستقرًا.
 
-**[حمّل أحدث نسخة Alpha للتطوير والاختبار](https://github.com/ryuamar/anastasia_space_app/releases/download/v0.1.0-alpha.1/anastasia-space-dev.apk)**
+**[حمّل النسخة الحالية للاختبار](anastasia-space.apk?raw=true)**
 
 <p align="center">
   <img src="https://anime.xotaku.com/stella/webp/interface/home_hero/480.webp" width="200" alt="">
@@ -50,15 +50,14 @@
 
 ## محتويات المستودع
 
-- <code dir="ltr">dev/</code> — نسخة التطبيق التي نعمل عليها حاليًا.
-- <code dir="ltr">dev/android/</code> — مشروع أندرويد.
-- <code dir="ltr">dev/www/</code> — صفحة الويب المحلية التي يبدأ منها Capacitor.
-- <a href="dev/anastasia-space-dev.apk"><code dir="ltr">dev/anastasia-space-dev.apk</code></a> — النسخة الحالية المتاحة للتنزيل والتجربة.
-- <code dir="ltr">live/</code> — سنضع فيه شيفرة الإصدارات المستقرة لاحقًا؛ المجلد فارغ حاليًا.
+- <a href="android/"><code dir="ltr">android/</code></a> — مشروع أندرويد.
+- <a href="www/"><code dir="ltr">www/</code></a> — صفحة الويب المحلية التي يبدأ منها Capacitor.
+- <a href="package.json"><code dir="ltr">package.json</code></a> و<a href="package-lock.json"><code dir="ltr">package-lock.json</code></a> — مكتبات التطبيق وإصداراتها المسجلة.
+- <a href="anastasia-space.apk?raw=true"><code dir="ltr">anastasia-space.apk</code></a> — ملف التطبيق الجاهز للتثبيت والاختبار.
 
 ## بناء التطبيق من المصدر
 
-[تعليمات بناء نسخة أندرويد متاحة الآن في BUILDING.md](BUILDING.md).
+[لبناء تطبيق أندرويد من المصدر، اتّبع تعليمات BUILDING.md](BUILDING.md).
 
 ## المساهمة
 

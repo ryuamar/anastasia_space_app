@@ -20,7 +20,7 @@ Anastasia Space is already live. Its official mobile app is new, open source, an
 
 The current Android APK works and is ready to try on **Android 7.0+**. It is a **development/debug build**, not a stable release.
 
-**[Download the current Alpha development/testing APK](https://github.com/ryuamar/anastasia_space_app/releases/download/v0.1.0-alpha.1/anastasia-space-dev.apk)**
+**[Download the current testing APK](anastasia-space.apk?raw=true)**
 
 <p align="center">
   <img src="https://anime.xotaku.com/stella/webp/interface/home_hero/480.webp" width="200" alt="">
@@ -49,15 +49,14 @@ The mobile app source is open source under the **[Mozilla Public License 2.0](LI
 
 ## Repository structure
 
-- [`dev/`](dev/) — Active development version.
-- [`dev/android/`](dev/android/) — Android project.
-- [`dev/www/`](dev/www/) — Local Capacitor web entry.
-- [Development APK](dev/anastasia-space-dev.apk) — `anastasia-space-dev.apk` inside `dev/`.
-- `live/` — Reserved for stable release source; currently empty.
+- [`android/`](android/) — Android project.
+- [`www/`](www/) — Local Capacitor web entry.
+- [`package.json`](package.json) and [`package-lock.json`](package-lock.json) — Dependencies and their recorded versions.
+- [`anastasia-space.apk`](anastasia-space.apk?raw=true) — Prebuilt development/debug APK.
 
 ## Building
 
-[Public Android build instructions are now available in BUILDING.md](BUILDING.md).
+[Build the Android app from source using BUILDING.md](BUILDING.md).
 
 ## Contributing
 

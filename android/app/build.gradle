@@ -1,0 +1,92 @@
+apply plugin: 'com.android.application'
+
+def app_source_fingerprint() {
+    def root = rootProject.projectDir.parentFile.toPath()
+    def files = fileTree(root.toFile()) {
+        include 'package.json', 'package-lock.json', 'capacitor.config.json', 'www/**', 'android/**'
+        exclude '**/build/**', '**/.gradle/**', '**/.idea/**', '**/.cxx/**', '**/.externalNativeBuild/**'
+        exclude '**/node_modules/**', '**/*.apk', '**/*.jks', '**/*.keystore', '**/*.log', '**/.DS_Store'
+        exclude '**/.git/**', '**/.gitignore', '**/.gitattributes', '**/.gitmodules'
+        exclude 'android/local.properties', 'android/capacitor.settings.gradle', 'android/app/capacitor.build.gradle'
+        exclude 'android/capacitor-cordova-android-plugins/**', 'android/app/src/main/assets/**', 'android/app/src/main/res/xml/config.xml'
+    }.files.findAll { !java.nio.file.Files.isSymbolicLink(it.toPath()) }
+    def digest = java.security.MessageDigest.getInstance('SHA-256')
+    files.sort { root.relativize(it.toPath()).toString().replace('\\', '/') }.each { file ->
+        def path = root.relativize(file.toPath()).toString().replace('\\', '/')
+        def hash = java.security.MessageDigest.getInstance('SHA-256').digest(file.bytes).encodeHex().toString()
+        digest.update((path + '\u0000' + hash + '\n').getBytes('UTF-8'))
+    }
+    return digest.digest().encodeHex().toString()
+}
+
+android {
+    namespace = "com.xotaku.anastasia"
+    compileSdk = rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "com.xotaku.anastasia"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 3
+        versionName "0.1.0-alpha.3"
+        manifestPlaceholders['appSourceFingerprint'] = app_source_fingerprint()
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        aaptOptions {
+             // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
+             // Default: https://android.googlesource.com/platform/frameworks/base/+/282e181b58cf72b6ca770dc7ca5f91f135444502/tools/aapt/AaptAssets.cpp#61
+            ignoreAssetsPattern = '!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation "androidx.activity:activity:${rootProject.ext.androidxActivityVersion}"
+    implementation "androidx.core:core:${rootProject.ext.androidxCoreVersion}"
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "androidx.appcompat:appcompat:${rootProject.ext.androidxAppCompatVersion}"
+    implementation "androidx.coordinatorlayout:coordinatorlayout:${rootProject.ext.androidxCoordinatorLayoutVersion}"
+    implementation "androidx.core:core-splashscreen:${rootProject.ext.coreSplashScreenVersion}"
+    implementation "androidx.webkit:webkit:${rootProject.ext.androidxWebkitVersion}"
+    implementation project(':capacitor-android')
+    testImplementation "junit:junit:${rootProject.ext.junitVersion}"
+    androidTestImplementation "androidx.test.ext:junit:${rootProject.ext.androidxJunitVersion}"
+    androidTestImplementation "androidx.test.espresso:espresso-core:${rootProject.ext.androidxEspressoCoreVersion}"
+    implementation project(':capacitor-cordova-android-plugins')
+}
+
+apply from: 'capacitor.build.gradle'
+
+tasks.register('prepareSyncApk') {
+    dependsOn 'assembleDebug'
+    def apk = layout.buildDirectory.file('outputs/apk/debug/app-debug.apk')
+    def config = rootProject.file('../capacitor.config.json')
+    def destination = rootProject.file('..')
+    doLast {
+        new java.util.zip.ZipFile(apk.get().asFile).withCloseable { archive ->
+            def entry = archive.getEntry('assets/capacitor.config.json')
+            if (entry == null) {
+                throw new GradleException('APK is missing the Capacitor configuration.')
+            }
+            def parser = new groovy.json.JsonSlurper()
+            def packaged = archive.getInputStream(entry).withCloseable { stream -> parser.parse(stream) }
+            if (packaged != parser.parse(config)) {
+                throw new GradleException('APK Capacitor configuration does not match the source. Run npm run build:android.')
+            }
+        }
+        java.nio.file.Files.copy(apk.get().asFile.toPath(), destination.toPath().resolve('anastasia-space-dev.apk'), java.nio.file.StandardCopyOption.REPLACE_EXISTING)
+    }
+}
+
+try {
+    def servicesJSON = file('google-services.json')
+    if (servicesJSON.text) {
+        apply plugin: 'com.google.gms.google-services'
+    }
+} catch(Exception e) {
+    logger.info("google-services.json not found, google-services plugin not applied. Push Notifications won't work")
+}

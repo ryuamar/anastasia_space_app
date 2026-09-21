@@ -1,46 +1,40 @@
 # Building Anastasia Space for Android
 
-These steps build the current Android development app from a fresh clone.
+Run these commands from the repository root to build the Android app from source.
 
 ## Requirements
 
 - Java 25
-- Android SDK API 36
-- Android Build Tools 36.1.0
+- Node.js and npm
+- Android SDK version configured in `android/variables.gradle`
+- Android Build Tools version configured in `android/build.gradle`
 
 ## Build
 
-From the repository root, enter the development project:
+Set `JAVA_HOME` and `ANDROID_HOME` to your Java and Android SDK installations if they are not already configured.
 
-```sh
-cd dev
-```
-
-Install the exact dependency snapshot committed with the project:
+Install the dependencies recorded in `package-lock.json`:
 
 ```sh
 npm ci
 ```
 
-Synchronize the Android project:
+Synchronize the web assets and Capacitor configuration with the Android project:
 
 ```sh
 npx cap sync android
 ```
 
-Build the debug APK from the Android project directory:
+Build the APK:
 
 ```sh
-cd android
-./gradlew assembleDebug
+./android/gradlew -p android --no-daemon assembleDebug
 ```
 
-The APK will be written to:
+The output is:
 
 ```text
-dev/android/app/build/outputs/apk/debug/app-debug.apk
+android/app/build/outputs/apk/debug/app-debug.apk
 ```
 
-`npm ci` uses the committed `package-lock.json` snapshot for reproducible setup. `dev/package.json` intentionally tracks `latest` because `dev/` follows active development. Running a normal `npm install` later can refresh that snapshot to newer stable Capacitor versions.
-
-`npx cap sync android` regenerates machine-specific Capacitor paths during synchronization. A fresh clone therefore does not need any developer-specific SDK or package paths.
+This command uses Android's debug build variant. The prebuilt APK included in the repository is [`anastasia-space.apk`](anastasia-space.apk).
